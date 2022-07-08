@@ -14,11 +14,54 @@ namespace Controllers
             _db = db;
         }
 
-        [HttpGet]
-        [Route("abc")]
-        public ActionResult<String> abc()
+        [HttpPost]
+        public async Task<IResult> CreateItem(Item item)
         {
-            return "hello from abc";
+            _db.Items.Add(item);
+            await _db.SaveChangesAsync();
+            return Results.Created($"/{item.Id}", item);
+        }
+
+        [HttpGet]
+        [Route("allitems")]
+        public async Task<ActionResult<List<Item>>> GetAllItems()
+        {
+            return await _db.Items.ToListAsync();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Item>> GetItem(long id)
+        {
+            var item = await _db.Items.FindAsync(id);
+
+            if(item == null)
+                return NotFound();
+
+            return Ok(item);
+        }
+
+        [HttpGet("{title}")]
+        public async Task<ActionResult<List<Item>>> SearchItem(string title)
+        {
+            var items = await _db.Items.Where(i => i.Title.Contains(title)).ToListAsync();
+
+            if(items == null)
+                return NotFound();
+
+            return Ok(items);
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IResult> DeleteItem(long id)
+        {
+            if(await _db.Items.FindAsync(id) is Item item)
+            {
+                _db.Items.Remove(item);
+                await _db.SaveChangesAsync();
+                return Results.Ok(item);
+            }
+
+            return Results.NotFound();
         }
 
     }
