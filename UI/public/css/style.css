@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Barlow&family=Nunito:wght@400;900&family=Zen+Antique&display=swap');
+
+html {
+    background-color: #fff;
+    color: #000;
+}
+
+.menu_item li {
+    list-style: none;
+    float: right;
+    padding:10px;
+}
+
+.disabled li {
+    color: #577590;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1.name {
+    color: #F5CB5C;
+    font-family: 'Zen Antique', serif;
+    font-size: 45px;
+    margin: 35px;
+    padding: 0;
+}
+
+.menu_item {
+    color: #CFDBD5;
+    display: inline;
+    margin: 0;
+    padding: 10px;
+}
+
+a li{
+    display: block;
+    padding: 8px;
+    font-family: 'Zen Antique', serif;
+    font-size: 20px;
+}
+
+
+a li:hover {
+    color: #CCE3D8;
+}
+
+.checkout-row1 {
+    display: flex;
+    position: relative;
+    text-align: center;
+    flex-direction: row;
+}
+
+.checkout-column {
+    flex: 1 1 auto;
+    text-align: center;
+}
+
+.checkout-column input {
+    display: block;
+    margin: auto;
+}
+
+
+.checkout-row1 h1 {
+    font-family: 'Zen Antique';
+    color: #333533;
+}
+
+.checkout-row1 p {
+    text-align: center;
+    font-family: 'Zen Antique';
+    font-size: 20px;
+    display: block;
+    
+}
+
+.checkout-row1 p, input {
+    display: flex;
+    flex-direction: column;
+}
