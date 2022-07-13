@@ -18,9 +18,10 @@ namespace Controllers
         // }
 
         [HttpPost("testJson")]
-        public string testJson(string json)
+        public string testJson(Dictionary<string,int> json)
         {
-            return json;
+            //Console.WriteLine(json);
+            return "yo";
         }
 
 
