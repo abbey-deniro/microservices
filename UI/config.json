@@ -1,0 +1,7 @@
+{
+    "menu":[
+        ["Checkout", "/checkout", ""],
+        ["Basket", "/basket", ""],
+        ["Catalog", "/", ""]
+    ]
+}

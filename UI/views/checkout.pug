@@ -1,0 +1,25 @@
+extends layout.pug
+block content
+    form(method='POST' action='/submitted')
+    div(class="checkout-row1")
+        div(class="checkout-column")
+        div(class="checkout-column")
+            h1 Personal
+            p Name:
+                input(type='text' name='name')
+            p Email:
+                input(type='text' email='email')
+            p Address:
+                input(type='text' address='address')
+        div(class="checkout-column")
+            h1 Payment
+            p Card Number:
+                input(type="text" name="ccNum")
+            p Exp Month:
+                input(type="text" name="expMonth")
+            p Exp Year:
+                input(type="text" name="expYear")
+            p CVV:
+                input(type="text" name="cvv")
+        div(class="checkout-column")
+    
