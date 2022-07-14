@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Barlow&family=Nunito:wght@400;900&family=Zen+Antique&display=swap');
 
 html {
-    background-color: #fff;
+    background-color: #f7f9f9 ;
     color: #000;
 }
 
@@ -82,3 +82,99 @@ a li:hover {
     display: flex;
     flex-direction: column;
 }
+
+
+
+/* ------------- BASKET CSS -------------- */
+.Container{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f7f9f9 , #FAFCFF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Cart-Container{
+    width: 70%;
+    height: 85%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px  #f7f9f9 ;
+}
+
+.Header{
+    margin: auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Heading{
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 700;
+    color: #2F3841;
+}
+.Action{
+    font-size: 16px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+}
+
+.Cart-Items{
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    padding-top: 5px;
+    line-height: 10px;
+    font-size: 32px;
+    font-family: ‘Open Sans’;
+    font-weight: 800;
+    color: #202020;
+}
+
+.desc {
+    line-height: 50px;
+    font-size: 18px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #909090;
+}
+
+
+.counter{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 900;
+    color: #202020;
+    cursor: pointer;
+   }
+   .count{
+    font-size: 20px;
+    font-family: ‘Open Sans’;
+    font-weight: 900;
+    color: #202020;
+   }
