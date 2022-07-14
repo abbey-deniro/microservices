@@ -52,6 +52,14 @@ namespace Controllers
             return Ok(items);
         }
 
+        [HttpGet]
+        public string GetCatalogItems()
+        {
+            var items =  _db.Items.ToList();
+
+            return Newtonsoft.Json.JsonConvert.SerializeObject(items);
+        }
+
         [HttpPut]
         public async Task<IResult> PutTodo(Item item1)
         {

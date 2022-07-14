@@ -16,9 +16,15 @@ namespace Controllers
             _db = db;
         }
 
+        [HttpGet]
+        public string GetBasket()
+        {
+            return Newtonsoft.Json.JsonConvert.SerializeObject(basket);
+        }
+
         [HttpPost]
-        [Route("addItem")]
-        public async Task<IResult> addItem(Item item, int quantity)
+        [Route("addItem/{quantity}")]
+        public async Task<IResult> addItem([FromBody] Item item, [FromQuery]int quantity)
         {
             basket.Add(item, quantity);
             return Results.Ok(item);
