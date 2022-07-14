@@ -17,6 +17,7 @@ namespace Controllers
         [HttpPost]
         public async Task<IResult> CreateItem(Item item)
         {
+            
             _db.Items.Add(item);
             await _db.SaveChangesAsync();
             return Results.Created($"/{item.Id}", item);
@@ -49,6 +50,23 @@ namespace Controllers
                 return NotFound();
 
             return Ok(items);
+        }
+
+        [HttpPut]
+        public async Task<IResult> PutTodo(Item item1)
+        {
+            var item2 = await _db.Items.FindAsync(item1.Id);
+
+            if(item2 == null)
+                return Results.NotFound();
+            
+            item2.Title = item1.Title;
+            item2.Description = item1.Description;
+            item2.UnitPrice = item1.UnitPrice;
+
+            await _db.SaveChangesAsync();
+
+            return Results.NoContent();
         }
 
         [HttpDelete("{id}")]

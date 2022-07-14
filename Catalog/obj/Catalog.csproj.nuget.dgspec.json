@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adeniro\\School\\Second_Year\\Summer2022\\microservices-2\\Catalog\\Catalog.csproj": {}
+    "C:\\Users\\dgonzalez\\OneDrive - Neumont College of Computer Science\\Documents\\School\\Second Year\\Summer 2022\\ServiceBased\\ECommerce\\microservices\\Catalog\\Catalog.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adeniro\\School\\Second_Year\\Summer2022\\microservices-2\\Catalog\\Catalog.csproj": {
+    "C:\\Users\\dgonzalez\\OneDrive - Neumont College of Computer Science\\Documents\\School\\Second Year\\Summer 2022\\ServiceBased\\ECommerce\\microservices\\Catalog\\Catalog.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adeniro\\School\\Second_Year\\Summer2022\\microservices-2\\Catalog\\Catalog.csproj",
+        "projectUniqueName": "C:\\Users\\dgonzalez\\OneDrive - Neumont College of Computer Science\\Documents\\School\\Second Year\\Summer 2022\\ServiceBased\\ECommerce\\microservices\\Catalog\\Catalog.csproj",
         "projectName": "Catalog",
-        "projectPath": "C:\\Users\\adeniro\\School\\Second_Year\\Summer2022\\microservices-2\\Catalog\\Catalog.csproj",
-        "packagesPath": "C:\\Users\\adeniro\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adeniro\\School\\Second_Year\\Summer2022\\microservices-2\\Catalog\\obj\\",
+        "projectPath": "C:\\Users\\dgonzalez\\OneDrive - Neumont College of Computer Science\\Documents\\School\\Second Year\\Summer 2022\\ServiceBased\\ECommerce\\microservices\\Catalog\\Catalog.csproj",
+        "packagesPath": "C:\\Users\\dgonzalez\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dgonzalez\\OneDrive - Neumont College of Computer Science\\Documents\\School\\Second Year\\Summer 2022\\ServiceBased\\ECommerce\\microservices\\Catalog\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\adeniro\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\dgonzalez\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -54,7 +54,7 @@
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[6.0.7, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
