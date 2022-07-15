@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100&family=Barlow&family=Nunito:wght@400;900&family=Zen+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
 
 html {
     background-color: #f7f9f9 ;
@@ -86,7 +88,7 @@ a li:hover {
 
 
 /* ------------- BASKET CSS -------------- */
-.Container{
+/* .Container{
     margin: 0;
     padding: 0;
     background: linear-gradient(to bottom right, #f7f9f9 , #FAFCFF);
@@ -157,8 +159,9 @@ a li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   }
-   .btn{
+}
+
+.btn{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -171,10 +174,143 @@ a li:hover {
     font-weight: 900;
     color: #202020;
     cursor: pointer;
-   }
-   .count{
+}
+.count{
     font-size: 20px;
     font-family: ‘Open Sans’;
     font-weight: 900;
     color: #202020;
-   }
+}
+
+.unitPrice{
+    padding-top: 20px;
+    font-size: 26px;
+    font-family: ‘Open Sans’;
+    font-weight: 800;
+    color: #202020;
+}
+
+.save{
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #1687d9;
+    cursor: pointer;
+}
+
+.remove{
+    padding-top: 5px;
+    font-size: 14px;
+    font-family: ‘Open Sans’;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+}
+
+.prices {
+    height: 75%;
+    text-align: right;
+} */
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-header {
+    font-family: "Raleway";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
