@@ -5,6 +5,13 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
+    getItems((items) => {
+        console.log(items);
+        
+
+        // display
+    });
+
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
         var button = removeCartItemButtons[i]
@@ -99,4 +106,15 @@ function updateCartTotal() {
     }
     total = Math.round(total * 100) / 100
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
+}
+
+function getItems(){
+    let url = 'http://localhost:5207/catalog';
+
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            console.log(data);
+            return data;
+        });
 }
