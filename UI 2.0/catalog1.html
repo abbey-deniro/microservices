@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Catalog</title>
+    </head>
+    <h2>Catalog</h2>
+    <table id="items" cellpadding="2" cellspacing="2" border="1" width="width=400px">
+        <tr>
+            <td style="background-color: gray; color: white">ID</td>  
+            <td style="background-color: gray; color: white">Title</td>  
+            <td style="background-color: gray; color: white">Description</td> 
+            <td style="background-color: gray; color: white">Name</td>  
+            <td style="background-color: gray; color: white">Price</td> 
+        </tr>
+    </table>
+
+    <div>
+        <h2>Search by ID</h2>
+
+        <input type="text" size="5" id="Id" />
+        <input type="button" value="search" onclick="find();" />
+    </div>
+    <script src="Scripts/jquery-2.1.1.js"></script>  
+    <script type="text/javascript">   
+
+        var uri = 'api/catalog';  
+        $(document).ready(function () {  
+            $.getJSON(uri)  
+            .done(function (data) {  
+                $.each(data, function (key, item) {  
+                    $('#item').append("<tr><td>" + item.ID + "</td>" + "<td>" + item.Title + "</td>" + "<td>" + item.Description + "</td>" + "<td>" + item.Price + '%' + "</td></tr>");   
+                });  
+            });  
+        });   
+
+function formatItem(item) {
+    return item.Id + '-' + item.Title + '-' + item.Description + '-' +item.Price;
+}
+
+function find() {var id = $('#stuId').val();  
+            $.getJSON(uri + '/' + id)  
+            .done(function (data) {  
+                $('#Items').text(formatItem(data));  
+            })  
+            .fail(function (jqXHR, textStatus, err) {  
+                $('#item').text('error' + err);  
+            })  
+        }   
+
+</script>
+</html>

@@ -1,0 +1,7 @@
+C:\Users\adeniro\School\Second_Year\Summer2022\microservices-2\Checkout\bin\Release\net6.0\publish\Checkout.exe
+C:\Users\adeniro\School\Second_Year\Summer2022\microservices-2\Checkout\bin\Release\net6.0\publish\appsettings.Development.json
+C:\Users\adeniro\School\Second_Year\Summer2022\microservices-2\Checkout\bin\Release\net6.0\publish\appsettings.json
+C:\Users\adeniro\School\Second_Year\Summer2022\microservices-2\Checkout\bin\Release\net6.0\publish\Checkout.dll
+C:\Users\adeniro\School\Second_Year\Summer2022\microservices-2\Checkout\bin\Release\net6.0\publish\Checkout.deps.json
+C:\Users\adeniro\School\Second_Year\Summer2022\microservices-2\Checkout\bin\Release\net6.0\publish\Checkout.runtimeconfig.json
+C:\Users\adeniro\School\Second_Year\Summer2022\microservices-2\Checkout\bin\Release\net6.0\publish\Checkout.pdb
