@@ -1,16 +1,25 @@
 if (document.readyState == 'loading') {
-    document.addEventListener('DOMContentLoaded', ready)
+    document.addEventListener('DOMContentLoaded', getItems())
 } else {
-    ready()
+    getItems();
 }
 
-function ready() {
-    getItems((items) => {
+function ready(items) {
+    
         console.log(items);
-        
+        var shopItems = document.getElementById('shop-items');
 
-        // display
-    });
+        for (var i = 0; i < items.length; i++) {
+            shopItems.innerHTML += `
+            <div class="shop-item">
+                    <span class="shop-item-title">${items[i].Title}</span>
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$${items[i].UnitPrice}</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            `
+        }
 
     var removeCartItemButtons = document.getElementsByClassName('btn-danger')
     for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -114,7 +123,7 @@ function getItems(){
     fetch(url)
         .then(res => res.json())
         .then(data => {
-            console.log(data);
-            return data;
+            //console.log(data);
+            ready(data);
         });
 }
