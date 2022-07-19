@@ -2,13 +2,6 @@
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 
-@font-face {
-    font-family: "Booter - Zero Zero";
-    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
-         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
 
 * {
     box-sizing: border-box;

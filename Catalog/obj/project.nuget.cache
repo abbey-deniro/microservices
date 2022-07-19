@@ -2,7 +2,7 @@
   "version": 2,
   "dgSpecHash": "Qwcrm/BbNCdC2YTZvh6YKQR6/W5rLbAKiH4Gt9B0OruQQD+nraJrRgKs70hVZJfW6AMCQ4B3N4wsKQxsw5GvNA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dgonzalez\\OneDrive - Neumont College of Computer Science\\Documents\\School\\Second Year\\Summer 2022\\ServiceBased\\ECommerce\\microservices\\Catalog\\Catalog.csproj",
+  "projectFilePath": "C:\\Users\\adeniro\\School\\Second_Year\\Summer2022\\microservices-2\\Catalog\\Catalog.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dgonzalez\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\dgonzalez\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
