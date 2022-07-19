@@ -54,3 +54,13 @@ C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\Scho
 C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\obj\Debug\net6.0\Catalog.csproj.CopyComplete
 C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.InMemory.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Steeltoe.Common.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Steeltoe.Common.Abstractions.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Steeltoe.Common.Http.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Steeltoe.Connector.Abstractions.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Steeltoe.Connector.ConnectorBase.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Steeltoe.Discovery.Abstractions.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Steeltoe.Discovery.ClientBase.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Steeltoe.Discovery.Eureka.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\Steeltoe.Extensions.Configuration.Abstractions.dll
+C:\Users\dgonzalez\OneDrive - Neumont College of Computer Science\Documents\School\Second Year\Summer 2022\ServiceBased\ECommerce\microservices\Catalog\bin\Debug\net6.0\System.Reflection.MetadataLoadContext.dll
