@@ -27,5 +27,15 @@ app.MapControllers();
 
 app.MapGet("/", () => "Hello World!");
 
+app.MapGet("/test", async (IDiscoveryClient idc) =>
+{
+    //return "this is the root of dotnet-eureka-client";
+    DiscoveryHttpClientHandler _handler = new DiscoveryHttpClientHandler(idc);
+    var client = new HttpClient(_handler, false);
+    string response = await client.GetStringAsync("http://MICROSERVICES-2/checkout/tester") + " more from dotnet-api2";
+    return response;
+}
+);
+
 app.Run();
 //https://localhost:7011;
