@@ -1,0 +1,80 @@
+version: '3.8'
+
+networks:
+  Ecommerce.1:
+    external: false
+services:
+  sqlserver.c:
+    container_name: sqlserver.c
+    #build:
+      #context: ./
+      #dockerfile: 3.dockerfile
+    #image: sqlserver.c:1
+    # the old way when I wasn't using a dockerfile
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - "1435:1433"
+    networks:
+      - Ecommerce.1
+    environment:
+      SA_PASSWORD: "abc123!!@"
+      ACCEPT_EULA: "Y"
+
+  catalog.1.c:
+    container_name: catalog.1.c
+    build:
+      context: ./Catalog/
+      dockerfile: catalog.dockerfile
+    image: catalog.1.c:1
+    ports:
+      - "9005:80"
+    networks:
+      - Ecommerce.1
+    depends_on:
+      - sqlserver.c
+      - eureka.c
+      - redis.c
+      - mongo.c
+
+  checkout.1.c:
+    container_name: checkout.1.c
+    build:
+      context: ./Checkout/
+      dockerfile: checkout.dockerfile
+    image: checkout.1.c:1
+    ports:
+      - "9006:80"
+    networks:
+      - Ecommerce.1
+    depends_on:
+      - sqlserver.c
+      - eureka.c
+      - redis.c
+      - mongo.c
+
+  email.1.c:
+    container_name: email.1.c
+    build:
+      context: ./Email/
+      dockerfile: email.dockerfile
+    image: catalog.1.c:1
+    ports:
+      - "9007:80"
+    networks:
+      - Ecommerce.1
+    depends_on:
+      - sqlserver.c
+      - eureka.c
+      - redis.c
+      - mongo.c
+
+  eureka:
+    container_name: eureka
+    image: steeltoeoss/eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - Ecommerce.1
+
+
+
