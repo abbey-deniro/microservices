@@ -20,6 +20,14 @@ services:
       SA_PASSWORD: "abc123!!@"
       ACCEPT_EULA: "Y"
 
+  eureka:
+    container_name: eureka
+    image: steeltoeoss/eureka-server
+    ports:
+      - "8761:8761"
+    networks:
+      - Ecommerce.1
+
   catalog.1.c:
     container_name: catalog.1.c
     build:
@@ -57,7 +65,7 @@ services:
     build:
       context: ./Email/
       dockerfile: email.dockerfile
-    image: catalog.1.c:1
+    image: email.1.c:1
     ports:
       - "9007:80"
     networks:
@@ -67,14 +75,6 @@ services:
       - eureka.c
       - redis.c
       - mongo.c
-
-  eureka:
-    container_name: eureka
-    image: steeltoeoss/eureka-server
-    ports:
-      - "8761:8761"
-    networks:
-      - Ecommerce.1
 
 
 
