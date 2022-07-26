@@ -4,21 +4,31 @@ networks:
   Ecommerce.1:
     external: false
 services:
-  sqlserver.c:
-    container_name: sqlserver.c
-    #build:
-      #context: ./
-      #dockerfile: 3.dockerfile
+  apigateway.c:
+    container_name: apigateway.c
+    build:
+      context: ./ApiGateway/
+      dockerfile: 2.dockerfile
+    image: apigateway.c:1    
+    ports:
+      - "8888:8888"
+    networks:
+      - Ecommerce.1    
+    depends_on:
+      - eureka
+    
+  catalogdb.c:
+    container_name: catalogdb.c
+    build:
+      context: ./Db/
+      dockerfile: db.dockerfile
     #image: sqlserver.c:1
     # the old way when I wasn't using a dockerfile
-    image: mcr.microsoft.com/mssql/server:2019-latest
+    #image: mcr.microsoft.com/mssql/server:2019-latest
     ports:
       - "1435:1433"
     networks:
       - Ecommerce.1
-    environment:
-      SA_PASSWORD: "abc123!!@"
-      ACCEPT_EULA: "Y"
 
   eureka:
     container_name: eureka
