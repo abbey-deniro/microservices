@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddDiscoveryClient(builder.Configuration);
 //builder.Services.AddDbContext<ItemDB>(opt => opt.UseInMemoryDatabase("ItemList"));
-builder.Services.AddDbContext<ItemDB>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("docker_db1")));
+builder.Services.AddDbContext<ItemDB>(opt => opt.UseSqlServer(builder.Configuration.GetConnectionString("docker_db2")));
 builder.Services.AddCors(options =>
 {
     options.AddPolicy(name: policyName,
