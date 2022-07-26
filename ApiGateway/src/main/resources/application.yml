@@ -29,14 +29,14 @@ spring:
         - Path=/catalog/**        
         #you can now hit this api gateway via: http://localhost:8888/api1/abc
 
-      - id: dotnetAPI2-a
-        uri: lb://DOTNET-API2
+      - id: checkoutAPI
+        uri: lb://CHECKOUTAPI
         predicates:
-        - Path=/**
+        - Path=/checkout/**
         #you can now hit endpoint like: http://localhost:8888/test1 this somehow maps to the minimal api endpoints
 
-      - id: dotnetAPI2-b
-        uri: lb://DOTNET-API2
+      - id: emailAPI
+        uri: lb://EMAILAPI
         predicates:
-        - Path=/api2/**
+        - Path=/email/**
         #you can now hit http://localhost:8888/api2
