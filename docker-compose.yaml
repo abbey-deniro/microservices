@@ -86,5 +86,102 @@ services:
       - redis.c
       - mongo.c
 
+  catalog.2.c:
+    container_name: catalog.2.c
+    build:
+      context: ./Catalog/
+      dockerfile: catalog.dockerfile
+    image: catalog.2.c:1
+    ports:
+      - "9010:80"
+    networks:
+      - Ecommerce.1
+    depends_on:
+      - sqlserver.c
+      - eureka.c
+      - redis.c
+      - mongo.c
+
+  checkout.2.c:
+    container_name: checkout.2.c
+    build:
+      context: ./Checkout/
+      dockerfile: checkout.dockerfile
+    image: checkout.2.c:1
+    ports:
+      - "9011:80"
+    networks:
+      - Ecommerce.1
+    depends_on:
+      - sqlserver.c
+      - eureka.c
+      - redis.c
+      - mongo.c
+
+  email.2.c:
+    container_name: email.2.c
+    build:
+      context: ./Email/
+      dockerfile: email.dockerfile
+    image: email.2.c:1
+    ports:
+      - "9012:80"
+    networks:
+      - Ecommerce.1
+    depends_on:
+      - sqlserver.c
+      - eureka.c
+      - redis.c
+      - mongo.c
+
+  catalog.3.c:
+    container_name: catalog.3.c
+    build:
+      context: ./Catalog/
+      dockerfile: catalog.dockerfile
+    image: catalog.3.c:1
+    ports:
+      - "9013:80"
+    networks:
+      - Ecommerce.1
+    depends_on:
+      - sqlserver.c
+      - eureka.c
+      - redis.c
+      - mongo.c
+
+  checkout.3.c:
+    container_name: checkout.3.c
+    build:
+      context: ./Checkout/
+      dockerfile: checkout.dockerfile
+    image: checkout.3.c:1
+    ports:
+      - "9014:80"
+    networks:
+      - Ecommerce.1
+    depends_on:
+      - sqlserver.c
+      - eureka.c
+      - redis.c
+      - mongo.c
+
+  email.3.c:
+    container_name: email.3.c
+    build:
+      context: ./Email/
+      dockerfile: email.dockerfile
+    image: email.3.c:1
+    ports:
+      - "9015:80"
+    networks:
+      - Ecommerce.1
+    depends_on:
+      - sqlserver.c
+      - eureka.c
+      - redis.c
+      - mongo.c
+
+
 
 
